@@ -1,0 +1,23 @@
+.userinfo {
+    height: 100vh;
+    border-right: 5px solid whitesmoke;
+    padding: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.setting:hover {
+    color: blueviolet;
+}
+
+.userProfile:hover {
+    color: blueviolet;
+}
+
+.LeaderboardLink {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color:blueviolet;
+    }
+}
