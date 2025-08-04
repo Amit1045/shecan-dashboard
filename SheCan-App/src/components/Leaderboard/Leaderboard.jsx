@@ -1,5 +1,5 @@
 import React from 'react'
-import "./LeaderBoard.css"
+import "./Leaderboard.css"
 import LeaderboardIcon from '@mui/icons-material/Leaderboard';
 function Leaderboard() {
 
