@@ -7,7 +7,7 @@ function HomePage() {
  
     
   const { data, error ,loading } = useUserData(); 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className='LoadingTag'>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
   
   // console.log(data);

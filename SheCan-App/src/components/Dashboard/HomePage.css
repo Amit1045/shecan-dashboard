@@ -20,7 +20,6 @@
 }
 .handle-reward-amt{
     display: flex;
-   
     margin: 20px;
     justify-content: space-between;
 }
@@ -64,6 +63,12 @@
         box-shadow: 10px 20px 10px #4fa09d54;
     }
    }
+
+   .LoadingTag{
+    font-size: 50px;
+    color: white;
+    font-family: cursive;
+   }
 .graphImg{
    height: 200px;
    width: 500px;
@@ -73,4 +78,55 @@
 }
 .amt{
     padding: 10px;
+}
+
+
+/* Additional CSS for Phone View */
+@media (max-width: 600px) {
+
+  .dash {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .show-refferal,
+  .AmtShow,
+  .graphImg {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .refer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .handle-reward-amt {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .rewardLevel {
+    width: 80%;
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 29px;
+  }
+
+  .graphImg {
+    width: 90%;
+    height: auto;
+  }
+
+  .iconsize {
+    height: 120px;
+  }
+
+  .amt {
+    padding: 8px;
+  }
 }

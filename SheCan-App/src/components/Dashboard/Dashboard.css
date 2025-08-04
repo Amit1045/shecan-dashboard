@@ -3,3 +3,11 @@
     display: flex;
     gap: 20px;
 }
+
+@media (max-width: 600px) {
+    .slidbar {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
