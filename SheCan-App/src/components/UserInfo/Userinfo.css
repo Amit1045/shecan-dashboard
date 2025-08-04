@@ -1,58 +1,58 @@
 .userinfo {
-    height: 100vh;
-    border-right: 5px solid whitesmoke;
-    padding: 10px;
-    color: aliceblue;
-    cursor: pointer;
-    background-color: #0b2450;
-    transition: all 0.3s ease;
-  }
-  
-  .setting:hover,
-  .userProfile:hover,
-  .LeaderboardLink:hover {
-    color: blueviolet;
-  }
-  
-  .LeaderboardLink {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Hamburger hidden on large screens */
+  height: 100vh;
+  border-right: 5px solid whitesmoke;
+  padding: 10px;
+  color: aliceblue;
+  cursor: pointer;
+  background-color: #0b2450;
+  transition: all 0.3s ease;
+}
+
+.setting:hover,
+.userProfile:hover,
+.LeaderboardLink:hover {
+  color: blueviolet;
+}
+
+.LeaderboardLink {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hamburger hidden on large screens */
+.hamburger-icon {
+  display: none;
+  padding: 10px;
+  background-color: #0b2450;
+}
+
+/* Responsive for phone view */
+@media (max-width: 600px) {
   .hamburger-icon {
+    display: block;
+  }
+
+  .userinfo {
     display: none;
+    background-color: rgb(12, 22, 76);
+    height: 0;
+    overflow: hidden;
+    border-right: none;
+    border-bottom: 2px solid whitesmoke;
+    text-align: center;
+    padding: 0;
+  }
+
+  .userinfo.show {
+    display: block;
+    height: 15vh;
     padding: 10px;
-    background-color: #0b2450;
   }
-  
-  /* Responsive for phone view */
-  @media (max-width: 600px) {
-    .hamburger-icon {
-      display: block;
-    }
-  
-    .userinfo {
-      display: none;
-      height: 0;
-      overflow: hidden;
-      border-right: none;
-      border-bottom: 2px solid whitesmoke;
-      text-align: center;
-      padding: 0;
-    }
-  
-    .userinfo.show {
-      display: block;
-      height: 20vh;
-      padding: 10px;
-    }
-  
-    .LeaderboardLink h2,
-    .setting,
-    .userProfile {
-      font-size: 16px;
-      margin: 6px 0;
-    }
+
+  .LeaderboardLink h2,
+  .setting,
+  .userProfile {
+    font-size: 16px;
+    margin: 6px 0;
   }
-  
+}

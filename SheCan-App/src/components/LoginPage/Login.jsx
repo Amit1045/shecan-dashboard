@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
     console.log("Email:", email);
     console.log("Password:", password);
-    // Add login logic here
+  
   };
 
   return (

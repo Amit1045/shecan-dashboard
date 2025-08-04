@@ -21,9 +21,9 @@ function Navbar() {
             <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=296,fit=crop,q=95/Aq2NJ23MzBH2rx2j/she-YlenJon1O7ieeEoa.jpg" alt="" className='icon-img' />
           </Link></div>
         <div className='nav-right'>
-          <h2><AccountCircleIcon /></h2>
+          <h2 className='acc-icon'><AccountCircleIcon /></h2>
           <h2 className='userName'>{InternName}</h2>
-         <Link to={"/"}> <button className='btn-Login'>LogOut</button></Link>
+         <Link to={"/"}> <button className='btn-Logout'>LogOut</button></Link>
         </div>
       </div>
     </div>
