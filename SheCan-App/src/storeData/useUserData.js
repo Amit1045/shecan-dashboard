@@ -6,7 +6,12 @@ const useUserData = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/api") // or "/api" with proxy
+    const baseURL = import.meta.env.VITE_API_URL || "";
+    fetch(`${baseURL}/api`);
+    
+    fetch(`${baseURL}/api`)
+
+      // or "/api" with proxy
       .then((res) => {
         if (!res.ok) throw new Error("Network error");
         return res.json();
